@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Manager — Project 3</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Task Manager</h1>
+
+  <section>
+    <h2>Add User</h2>
+    <form id="user-form">
+      <input type="text" id="user-name" placeholder="Name" required>
+      <input type="email" id="user-email" placeholder="Email" required>
+      <button type="submit">Add User</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Users</h2>
+    <ul id="user-list"></ul>
+  </section>
+
+  <section>
+    <h2>Add Task</h2>
+    <form id="task-form">
+      <select id="task-user" required></select>
+      <input type="text" id="task-title" placeholder="Task title" required>
+      <button type="submit">Add Task</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Tasks</h2>
+    <ul id="task-list"></ul>
+  </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
